@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,41 +63,42 @@ box-shadow: 0 0 10px rgba(34, 197, 94, 0.3) inset;
 <body class="min-h-screen flex flex-col items-center p-4 overflow-x-hidden relative">
 <div id="view-instructions" class="app-view flex flex-1 w-full max-w-xl flex-col items-center pt-4 pb-20 animate-fade-in z-10">
 <div class="text-center mb-6">
-<h1 class="text-3xl font-black text-white tracking-tighter mb-2">INSTRUCTIONS</h1>
-<p class="text-xs text-zinc-500 uppercase tracking-widest font-bold">How to use the Predictor</p>
+<h1 class="text-3xl font-black text-white tracking-tighter mb-2">التعليمات</h1>
+<p class="text-xs text-zinc-500 uppercase tracking-widest font-bold">كيفية استخدام المتنبئ</p>
 </div>
-<div class="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-2xl p-6 shadow-2xl w-full text-left relative overflow-hidden mb-6">
+<div class="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-2xl p-6 shadow-2xl w-full text-right relative overflow-hidden mb-6">
 <div class="space-y-6">
-<div class="flex gap-4 items-start">
+<div class="flex gap-4 items-start flex-row-reverse">
 <div class="w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-500/50 flex items-center justify-center text-xl shrink-0 shadow-[0_0_15px_rgba(59,130,246,0.2)]">💰</div>
 <div>
-<h3 class="text-white font-bold mb-1">Bet Amount</h3>
-<p class="text-sm text-zinc-400 leading-relaxed">Start with small amounts (5-10% of your balance). This is necessary to warm up the algorithm and avoid casino anti-fraud detection.</p>
+<h3 class="text-white font-bold mb-1">مبلغ الرهان</h3>
+<p class="text-sm text-zinc-400 leading-relaxed">ابدأ بمبالغ صغيرة (5-10% من رصيدك). هذا ضروري لتسخين الخوارزمية وتجنب الكشف بواسطة نظام مكافحة الاحتيال في الكาสينو.</p>
 </div>
 </div>
-<div class="flex gap-4 items-start">
+<div class="flex gap-4 items-start flex-row-reverse">
 <div class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/50 flex items-center justify-center text-xl shrink-0 shadow-[0_0_15px_rgba(168,85,247,0.2)]">🎯</div>
 <div>
-<h3 class="text-white font-bold mb-1">Signal Generation</h3>
-<p class="text-sm text-zinc-400 leading-relaxed">Select a game and click the button to get a signal. The algorithm will give you a safe path (cells) or an exact multiplier.</p>
+<h3 class="text-white font-bold mb-1">توليد الإشارات</h3>
+<p class="text-sm text-zinc-400 leading-relaxed">اختر لعبة وانقر على الزر للحصول على إشارة. ستمنحك الخوارزمية مسارًا آمنًا (خلايا) أو مضاعفًا دقيقًا.</p>
 </div>
 </div>
 <div class="bg-red-500/10 border border-red-500/30 p-5 rounded-xl mt-4 relative overflow-hidden">
-<div class="absolute -right-2 -top-2 opacity-10">
+<div class="absolute -left-2 -top-2 opacity-10">
 <svg class="w-24 h-24 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
 </div>
-<h3 class="text-red-500 font-bold mb-2 flex items-center gap-2 text-lg">STRICT RULE!</h3>
-<p class="text-sm text-red-200 leading-relaxed relative z-10">
-If the predictor shows an exact multiplier, <strong>strictly follow it</strong> and cash out at that value. IT IS STRICTLY FORBIDDEN to be greedy and wait for a higher multiplier!
+<h3 class="text-red-500 font-bold mb-2 flex items-center gap-2 text-lg justify-end">قاعدة صارمة!</h3>
+<p class="text-sm text-red-200 leading-relaxed relative z-10 text-right">
+إذا أظهر المتنبئ مضاعفًا دقيقًا، <strong>فاتبعه بصرامة</strong> واصرف الأموال عند تلك القيمة. يُحظى تمامًا الطمع والانتظار لمضاعف أعلى!
 </p>
 </div>
 </div>
 </div>
 <button type="button" id="btn-understand" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-xl font-bold text-lg tracking-wider transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-3">
-I UNDERSTAND, START
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+أنا أفهم، ابدأ
+<svg class="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
 </button>
 </div>
+
 <div id="view-landing" class="app-view hidden flex-1 w-full max-w-xl flex-col items-center justify-center animate-fade-in z-10">
 <div class="text-center mb-10">
 <svg class="w-24 h-24 mx-auto mb-6 fill-white drop-shadow-[0_0_15px_rgba(59,130,246,0.6)]" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -105,155 +106,161 @@ I UNDERSTAND, START
 <path d="M60 40 L65 50 L55 60 L65 60 L75 45 L65 35 Z" />
 <path d="M70 55 L75 65 L65 75 L75 75 L85 60 L75 50 Z" />
 </svg>
-<h1 class="text-4xl font-black text-white tracking-tighter mb-2">ACCOUNT <span class="text-green-500">LINKED</span></h1>
-<p class="text-xs text-zinc-500 uppercase tracking-widest font-bold">Step 2: Network Verification</p>
+<h1 class="text-4xl font-black text-white tracking-tighter mb-2">تم ربط <span class="text-green-500">الحساب</span></h1>
+<p class="text-xs text-zinc-500 uppercase tracking-widest font-bold">الخطوة 2: التحقق من الشبكة</p>
 </div>
 <div class="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-2xl p-8 shadow-2xl w-full text-center relative overflow-hidden">
 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-green-500"></div>
-<h2 class="text-xl font-black text-white mb-4">Complete Activation</h2>
+<h2 class="text-xl font-black text-white mb-4">إكمال التفعيل</h2>
 <p class="text-sm text-zinc-400 mb-8 leading-relaxed">
-Your betting account has been recognized by the KRAKEN network. We need to run a final sync to establish a secure exploit tunnel.
+تم التعرف على حساب الرهان الخاص بك بواسطة شبكة KRAKEN. نحتاج إلى تشغيل مزامنة نهائية لإنشاء نفق استغلال آمن.
 </p>
 <button type="button" id="btn-sync" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-xl font-bold text-lg tracking-wider transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-3">
-SYNCHRONIZE NOW
+مزامنة الآن
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
 </button>
 </div>
 </div>
+
 <div id="view-loader" class="app-view hidden flex-1 w-full max-w-xl flex-col items-center justify-center animate-fade-in z-10">
-<div class="w-full bg-[#0a0a0c] border border-zinc-800 rounded-2xl p-6 shadow-2xl font-mono text-sm">
-<div class="flex items-center gap-2 mb-6 pb-4 border-b border-zinc-800">
+<div class="w-full bg-[#0a0a0c] border border-zinc-800 rounded-2xl p-6 shadow-2xl font-mono text-sm text-right" dir="ltr">
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-zinc-800">
+<div class="flex gap-2">
 <div class="w-3 h-3 rounded-full bg-red-500"></div>
 <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
 <div class="w-3 h-3 rounded-full bg-green-500"></div>
-<span class="ml-2 text-zinc-500 text-xs" id="terminal-header">kraken_core_v2.exe</span>
+</div>
+<span class="text-zinc-500 text-xs" id="terminal-header">kraken_core_v2.exe</span>
 </div>
 <div class="space-y-2 text-zinc-400 min-h-[120px] flex flex-col justify-end" id="terminal-output"></div>
 <div class="mt-6 w-full h-1.5 bg-zinc-900 rounded-full overflow-hidden loading-bar"></div>
 </div>
 </div>
+
 <div id="view-games" class="app-view hidden flex-1 w-full max-w-xl flex-col items-center pt-10 pb-20 animate-fade-in z-10">
 <div class="text-center mb-8">
-<h2 class="text-2xl font-black text-white tracking-tight mb-2">SELECT TARGET</h2>
-<p class="text-sm text-zinc-500">Choose a game to inject exploit</p>
+<h2 class="text-2xl font-black text-white tracking-tight mb-2">اختر الهدف</h2>
+<p class="text-sm text-zinc-500">اختر لعبة لحقن الاستغلال</p>
 </div>
 <div class="grid grid-cols-2 gap-4 w-full px-2">
 <button class="game-card bg-zinc-900 border border-zinc-800 hover:border-blue-500 rounded-2xl p-6 flex flex-col items-center gap-4 transition-all" data-game="Mines">
 <div class="text-5xl">💣</div>
-<span class="font-bold text-white tracking-widest text-sm">MINES</span>
+<span class="font-bold text-white tracking-widest text-sm">الألغام</span>
 </button>
 <button class="game-card bg-zinc-900 border border-zinc-800 hover:border-red-500 rounded-2xl p-6 flex flex-col items-center gap-4 transition-all" data-game="Aviator">
 <div class="text-5xl">✈️</div>
-<span class="font-bold text-white tracking-widest text-sm">AVIATOR</span>
+<span class="font-bold text-white tracking-widest text-sm">طائرة</span>
 </button>
 <button class="game-card bg-zinc-900 border border-zinc-800 hover:border-yellow-500 rounded-2xl p-6 flex flex-col items-center gap-4 transition-all" data-game="Thimbles">
 <div class="text-5xl">🎩</div>
-<span class="font-bold text-white tracking-widest text-sm">THIMBLES</span>
+<span class="font-bold text-white tracking-widest text-sm">الكؤوس</span>
 </button>
 <button class="game-card bg-zinc-900 border border-zinc-800 hover:border-green-500 rounded-2xl p-6 flex flex-col items-center gap-4 transition-all" data-game="Apple">
 <div class="text-5xl">🍏</div>
-<span class="font-bold text-white tracking-widest text-sm text-center">APPLE OF FORTUNE</span>
+<span class="font-bold text-white tracking-widest text-sm text-center">تفاحة الحظ</span>
 </button>
 </div>
 </div>
+
 <div id="view-signal" class="app-view hidden flex-1 w-full max-w-xl flex-col items-center pt-8 pb-20 animate-fade-in z-10">
 <div class="w-full flex items-center justify-between mb-8 pb-4 border-b border-zinc-800">
-<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-xs text-zinc-500 mb-1">الدقة</p>
+<p class="text-sm font-black text-white font-mono">99.1%</p>
+</div>
+<div class="flex items-center gap-3 flex-row-reverse">
 <div class="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center border border-green-500/30">
 <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
 </div>
-<div>
-<div class="flex items-center gap-2 mb-1">
-<span class="w-2 h-2 bg-green-500 rounded-full success-glow"></span>
-<span class="text-xs font-black text-green-500 tracking-wider">TUNNEL SECURE</span>
-</div>
-<p class="text-[10px] font-bold text-zinc-500 tracking-widest uppercase">Target: <span id="target-game-name" class="text-white"></span></p>
-</div>
-</div>
 <div class="text-right">
-<p class="text-xs text-zinc-500 mb-1">ACCURACY</p>
-<p class="text-sm font-black text-white font-mono">99.1%</p>
+<div class="flex items-center gap-2 mb-1 justify-end">
+<span class="text-xs font-black text-green-500 tracking-wider">النفق آمن</span>
+<span class="w-2 h-2 bg-green-500 rounded-full success-glow"></span>
+</div>
+<p class="text-[10px] font-bold text-zinc-500 tracking-widest uppercase">الهدف: <span id="target-game-name" class="text-white"></span></p>
+</div>
 </div>
 </div>
 <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 w-full mb-8 relative flex justify-center items-center min-h-[250px]" id="signal-container"></div>
 <div class="w-full px-4">
 <button type="button" id="btn-next-signal" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white border border-zinc-700 py-4 rounded-xl font-bold text-lg tracking-wider transition-all flex items-center justify-center gap-3 shadow-[0_5px_15px_rgba(0,0,0,0.5)]">
-GET NEXT SIGNAL
+الحصول على الإشارة التالية
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
 </button>
-<p class="text-center text-xs text-zinc-600 mt-4 uppercase">Free signals left: <span class="text-white font-bold bg-zinc-800 px-2 py-0.5 rounded">0</span></p>
+<p class="text-center text-xs text-zinc-600 mt-4 uppercase">الإشارات المجانية المتبقية: <span class="text-white font-bold bg-zinc-800 px-2 py-0.5 rounded">0</span></p>
 </div>
 </div>
+
 <div id="view-deposit" class="app-view hidden flex-1 w-full max-w-xl flex-col items-center pt-6 pb-20 animate-fade-in z-10">
-<div class="w-full flex items-center justify-between mb-6 pb-4 border-b border-zinc-800">
-<div class="flex items-center gap-3">
+<div class="w-full flex items-center justify-end mb-6 pb-4 border-b border-zinc-800">
+<div class="flex items-center gap-3 flex-row-reverse">
 <svg class="w-10 h-10 fill-zinc-500" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <path d="M40 20 L50 35 L40 50 L55 50 L65 30 L55 20 Z" />
 <path d="M60 40 L65 50 L55 60 L65 60 L75 45 L65 35 Z" />
 <path d="M70 55 L75 65 L65 75 L75 75 L85 60 L75 50 Z" />
 </svg>
-<div>
-<div class="flex items-center gap-2 mb-1">
+<div class="text-right">
+<div class="flex items-center gap-2 mb-1 justify-end">
+<span class="text-xs font-black text-yellow-500 tracking-wider">في انتظار الإيداع</span>
 <span class="w-2 h-2 bg-yellow-500 rounded-full warning-glow"></span>
-<span class="text-xs font-black text-yellow-500 tracking-wider">AWAITING DEPOSIT</span>
 </div>
-<p class="text-[10px] font-bold text-zinc-500 tracking-widest uppercase">Tunnel: Blocked</p>
-</div>
+<p class="text-[10px] font-bold text-zinc-500 tracking-widest uppercase">النفق: محظور</p>
 </div>
 </div>
-<div class="bg-yellow-500/10 border border-yellow-500/30 rounded-2xl p-6 w-full mb-6 relative overflow-hidden">
-<div class="absolute -right-4 -top-4 opacity-10">
+</div>
+<div class="bg-yellow-500/10 border border-yellow-500/30 rounded-2xl p-6 w-full mb-6 relative overflow-hidden text-right">
+<div class="absolute -left-4 -top-4 opacity-10">
 <svg class="w-32 h-32 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
 </div>
-<h3 class="text-lg font-black text-white mb-2 relative z-10">Zero Balance Detected</h3>
+<h3 class="text-lg font-black text-white mb-2 relative z-10">تم اكتشاف رصيد صفري</h3>
 <p class="text-sm text-zinc-300 leading-relaxed relative z-10">
-Your free trial signal has been used. The KRAKEN network detected a balance of <span class="text-yellow-500 font-bold bg-yellow-500/10 px-1 py-0.5 rounded border border-yellow-500/20">0.00 <span id="dyn-currency-code-1"></span></span> on your account. <br><br>
-To bypass the anti-fraud system and receive continuous signals without getting blocked, the algorithm requires an active playing balance.
+تم استهلاك إشارة الإصدار التجريبي المجاني. اكتشفت شبكة KRAKEN رصيدًا قدره <span class="text-yellow-500 font-bold bg-yellow-500/10 px-1 py-0.5 rounded border border-yellow-500/20">0.00 <span id="dyn-currency-code-1"></span></span> على حسابك. <br><br>
+لتجاوز نظام مكافحة الاحتيال وتلقي إشارات مستمرة دون أن يتم حظرك، تتطلب الخوارزمية وجود رصيد لعب نشط.
 </p>
 </div>
-<div class="w-full bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-5 mb-6">
-<h4 class="text-xs text-zinc-500 uppercase tracking-widest font-bold mb-4">Activation Steps:</h4>
+<div class="w-full bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-5 mb-6 text-right">
+<h4 class="text-xs text-zinc-500 uppercase tracking-widest font-bold mb-4">خطوات التفعيل:</h4>
 <div class="space-y-4">
-<div class="flex gap-3 items-start">
+<div class="flex gap-3 items-start flex-row-reverse">
 <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0 font-bold mt-0.5">1</span>
 <p class="text-sm text-zinc-300 leading-relaxed">
-Make a deposit to your betting account.<br>
-<span class="block mt-1.5 text-xs">Min required: <span class="text-green-400 font-bold font-mono bg-green-900/20 px-1.5 py-0.5 rounded border border-green-500/20" id="dyn-min-deposit"></span></span>
+قم بإيداع مبلغ في حساب الرهان الخاص بك.<br>
+<span class="block mt-1.5 text-xs">الحد الأدنى المطلُوب: <span class="text-green-400 font-bold font-mono bg-green-900/20 px-1.5 py-0.5 rounded border border-green-500/20" id="dyn-min-deposit"></span></span>
 </p>
 </div>
-<div class="flex gap-3 items-start">
+<div class="flex gap-3 items-start flex-row-reverse">
 <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0 font-bold mt-0.5">2</span>
 <p class="text-sm text-zinc-300 leading-relaxed">
-Take a screenshot showing your new balance or the successful deposit receipt.
+التقاط صورة شاشة تُظهر رصيدك الجديد أو إيصال الإيداع الناجح.
 </p>
 </div>
-<div class="flex gap-3 items-start">
+<div class="flex gap-3 items-start flex-row-reverse">
 <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0 font-bold mt-0.5">3</span>
 <p class="text-sm text-zinc-300 leading-relaxed">
-Send the screenshot to our manager to unlock full bot access.
+أرسل لقطة الشاشة إلى مديرنا لفتح الوصول الكامل للبوت.
 </p>
 </div>
 </div>
 </div>
 <div class="w-full space-y-3">
 <a href="https://reffpa.com/L?tag=d_5850252m_69917c_&site=5850252&ad=69917&r=registration" target="_blank" rel="noreferrer" class="w-full bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 transition-all shadow-[0_0_15px_rgba(37,99,235,0.4)]">
-Make Deposit
+إجراء إيداع
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
 </a>
 <a href="https://t.me/Jabari_alif_lam_bot" target="_blank" rel="noreferrer" class="w-full bg-[#2AABEE] hover:bg-[#229ED9] text-white py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(42,171,238,0.4)]">
 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.888-.662 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-Send Screenshot
+إرسال لقطة الشاشة
 </a>
 </div>
 </div>
 <div id="live-feed" class="fixed bottom-4 right-4 left-4 md:right-6 md:left-auto md:w-80 flex flex-col gap-2 z-40 pointer-events-none"></div>
 <script>
 const geoData = {
-'SY': { name: 'Syria', currencyStr: 'ل.س', code: 'SYP', minDeposit: '450' }
+'SY': { name: 'سوريا', currencyStr: 'ل.س', code: 'SYP', minDeposit: '450' }
 };
 let userGeo = geoData['SY'];
 document.getElementById('dyn-currency-code-1').innerText = userGeo.code;
-document.getElementById('dyn-min-deposit').innerText = `${userGeo.currencyStr}${userGeo.minDeposit}`;
+document.getElementById('dyn-min-deposit').innerText = `${userGeo.minDeposit} ${userGeo.currencyStr}`;
 function switchView(targetViewId) {
 document.querySelectorAll('.app-view').forEach(v => {
 v.classList.add('hidden');
@@ -290,11 +297,11 @@ switchView('view-landing');
 });
 document.getElementById('btn-sync').addEventListener('click', () => {
 const lines = [
-"[ OK ] Connecting to Server API...",
-"[ OK ] Handshake successful. Validating ID.",
-"[ OK ] Promocode SYR989 verified.",
-"[....] Requesting exploit modules...",
-"[ OK ] All modules loaded successfully."
+"[ OK ] الاتصال بواجهة برمجة تطبيقات الخادم...",
+"[ OK ] نجح الاتصال. جاري التحقق من المعرف.",
+"[ OK ] تم التحقق من الرمز الترويجي SYR989.",
+"[....] طلب وحدة الاستغلال...",
+"[ OK ] تم تحميل كافة الوحدات بنجاح."
 ];
 playTerminalSequence('kraken_sync.exe', lines, () => {
 switchView('view-games');
@@ -304,13 +311,13 @@ document.querySelectorAll('.game-card').forEach(btn => {
 btn.addEventListener('click', (e) => {
 const gameName = e.currentTarget.dataset.game;
 const lines = [
-`[....] Injecting script into ${gameName}...`,
-`[ OK ] Bypass protocol active.`,
-`[....] Scraping RNG seeds...`,
-`<span class='text-green-500'>[ OK ] Hash decrypted. Signal ready.</span>`
+`[....] حقن السكريبت في ${gameName}...`,
+`[ OK ] بروتوكول التجاوز نشط.`,
+`[....] كشط بذور RNG...`,
+`<span class='text-green-500'>[ OK ] تم فك تشفير الرمز. الإشارة جاهزة.</span>`
 ];
 playTerminalSequence(`hack_${gameName.toLowerCase()}.dll`, lines, () => {
-document.getElementById('target-game-name').innerText = gameName;
+document.getElementById('target-game-name').innerText = (gameName === 'Mines' ? 'الألغام' : gameName === 'Aviator' ? 'طائرة' : gameName === 'Thimbles' ? 'الكؤوس' : 'تفاحة الحظ');
 renderSignal(gameName);
 switchView('view-signal');
 });
@@ -318,10 +325,10 @@ switchView('view-signal');
 });
 document.getElementById('btn-next-signal').addEventListener('click', () => {
 const lines = [
-"[....] Requesting next hash...",
-"[WARN] Checking wallet status...",
-`<span class='text-yellow-500'>[FAIL] Current balance: 0.00 ${userGeo.code}</span>`,
-"<span class='text-red-500'>[ERR] Free trial exhausted. Exploit blocked!</span>"
+"[....] طلب الرمز التالي...",
+"[WARN] التحقق من حالة المحفظة...",
+`<span class='text-yellow-500'>[FAIL] الرصيد الحالي: 0.00 ${userGeo.code}</span>`,
+"<span class='text-red-500'>[ERR] انتهت الفترة التجريبية المجانية. تم حظر الاستغلال!</span>"
 ];
 playTerminalSequence('kraken_core.exe', lines, () => {
 switchView('view-deposit');
@@ -353,11 +360,11 @@ else if (game === 'Aviator') {
 const mult = (1.10 + Math.random() * 0.89).toFixed(2);
 container.innerHTML = `
 <div class="text-center">
-<p class="text-zinc-500 text-sm font-bold tracking-widest mb-2 uppercase">CASH OUT AT:</p>
+<p class="text-zinc-500 text-sm font-bold tracking-widest mb-2 uppercase">قم بالسحب عند:</p>
 <h3 class="text-6xl font-black text-red-500 font-mono drop-shadow-[0_0_20px_rgba(239,68,68,0.5)]">
 ${mult}x
 </h3>
-<p class="text-red-500/80 text-xs mt-3 font-bold uppercase animate-pulse">Do not wait!</p>
+<p class="text-red-500/80 text-xs mt-3 font-bold uppercase animate-pulse">لا تنتظر طويلاً!</p>
 </div>
 `;
 }
@@ -392,16 +399,16 @@ container.innerHTML = `
 <div class="text-5xl animate-bounce drop-shadow-[0_0_15px_rgba(34,197,94,0.8)]">🎩</div>
 <div class="text-5xl opacity-30">🎩</div>
 </div>
-<p class="text-green-500 font-bold uppercase tracking-widest text-sm">Ball in the middle</p>
+<p class="text-green-500 font-bold uppercase tracking-widest text-sm">الكرة في المنتصف</p>
 </div>
 `;
 }
 }
 const fakeGames = [
-{name: 'MINES', icon: '💣'},
-{name: 'AVIATOR', icon: '✈️'},
-{name: 'APPLE', icon: '🍏'},
-{name: 'THIMBLES', icon: '🎩'}
+{name: 'الألغام', icon: '💣'},
+{name: 'طائرة', icon: '✈️'},
+{name: 'تفاحة الحظ', icon: '🍏'},
+{name: 'الكؤوس', icon: '🎩'}
 ];
 const feedGeoConfigs = [
 { flag: '🇸🇾', currency: 'ل.س', mult: 13000 }
@@ -418,22 +425,22 @@ const maxWin = 55;
 const randomFactor = Math.pow(Math.random(), 2);
 const usdAmount = Math.floor(minWin + (maxWin - minWin) * randomFactor);
 const localAmount = (usdAmount * geo.mult);
-const formattedAmount = '+' + geo.currency + localAmount.toLocaleString('en-SY');
+const formattedAmount = '+' + localAmount.toLocaleString('en-SY') + ' ' + geo.currency;
 const feedContainer = document.getElementById('live-feed');
 const winItem = document.createElement('div');
-winItem.className = 'bg-zinc-900/95 backdrop-blur-md border border-zinc-800/80 rounded-xl p-3 shadow-[0_5px_20px_rgba(0,0,0,0.6)] flex items-center gap-3 animate-slide-up transition-all';
+winItem.className = 'bg-zinc-900/95 backdrop-blur-md border border-zinc-800/80 rounded-xl p-3 shadow-[0_5px_20px_rgba(0,0,0,0.6)] flex items-center gap-3 animate-slide-up transition-all flex-row-reverse text-right';
 winItem.innerHTML = `
 <div class="w-10 h-10 bg-gradient-to-br from-zinc-800 to-black rounded-lg flex items-center justify-center text-xl shadow-inner border border-zinc-700/50">
 ${game.icon}
 </div>
-<div class="flex-1 flex justify-between items-center">
-<div>
+<div class="flex-1 flex justify-between items-center flex-row-reverse">
+<div class="text-right">
 <p class="text-[12px] font-bold text-white tracking-widest font-mono">
 ${geo.flag} ID: ${generateRandomId()}
 </p>
-<p class="text-[10px] text-zinc-400 font-sans uppercase">${game.name} EXPLOIT</p>
+<p class="text-[10px] text-zinc-400 font-sans uppercase">استغلال ${game.name}</p>
 </div>
-<div class="text-right">
+<div class="text-left">
 <p class="text-sm font-black text-green-400 font-mono">${formattedAmount}</p>
 </div>
 </div>
